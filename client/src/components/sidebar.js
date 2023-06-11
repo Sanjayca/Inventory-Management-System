@@ -3,7 +3,7 @@ import { Drawer, List, ListItem, ListItemIcon, ListItemText, Button } from '@mat
 import { Home as HomeIcon } from '../icons/home';
 import 'font-awesome/css/font-awesome.min.css';
 import { EOQ as EOQIcon } from '../icons/eoq';
-
+import { Sales as SalesIcon } from '../icons/sales';
 
 const items = [
   {
@@ -15,6 +15,11 @@ const items = [
     href: '/eoq',
     icon: EOQIcon,
     label: 'EOQ'
+  },
+  {
+    href:'/sales',
+    icon: SalesIcon,
+    label: 'Sales'
   },
 
 
