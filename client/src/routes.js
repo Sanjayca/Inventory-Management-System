@@ -3,6 +3,7 @@ import { Layout } from './components/layout';
 import { NotFound } from './pages/not-found';
 import { Reports } from './pages/reports';
 import EOQPage from './pages/EOQPage'; // Import the EOQPage component
+import { Department } from './pages/Department';
 
 export const routes = [
   {
@@ -30,6 +31,16 @@ export const routes = [
       {
         path: '/',
         element: <EOQPage />
+      }
+    ]
+  },
+  {
+    path: '/sales',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Department />
       }
     ]
   },
