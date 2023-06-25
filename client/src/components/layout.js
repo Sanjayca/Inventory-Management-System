@@ -19,7 +19,7 @@ const DashboardLayoutContentWrapper = styled('div')(
     display: 'flex',
     flex: '1 1 auto',
     overflow: 'hidden',
-    paddingLeft: 73,
+    paddingLeft: 110,
     paddingTop: '64px'
   })
 );

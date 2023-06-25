@@ -17,36 +17,36 @@ class Employees(models.Model):
 
 
 class Sales(models.Model):
-    SalesId = models.IntegerField(primary_key=True)
+    SalesId = models.CharField(primary_key=True, max_length=500)
     StoreId = models.IntegerField()
     Date = models.DateField() 
-    ItemId = models.IntegerField()
-    Sales = models.IntegerField()
+    ItemId = models.CharField(max_length=500)
+    SalesQty = models.IntegerField()
 
 class Supplier(models.Model):
-    SupplierId = models.IntegerField(primary_key=True)
+    SupplierId = models.CharField(primary_key=True, max_length=500)
     SupplierName = models.CharField(max_length=500)
     SupplierContact = models.IntegerField()
     SupplierEmail = models.CharField(max_length=500)
     SupplierAddress = models.CharField(max_length=500)
 
 class Vendor(models.Model):
-    VendorId = models.IntegerField(primary_key=True)
+    VendorId = models.CharField(primary_key=True, max_length=500)
     VendorName = models.CharField(max_length=500)
-    VendorContact = models.IntegerField()
-    PayementMethod = models.CharField(max_length=500)
+    VendorContact = models.BigIntegerField()
+    PaymentMethod = models.CharField(max_length=500)
     VendorAddress = models.CharField(max_length=500)
 
 class Store(models.Model):
-    StoreId = models.IntegerField(primary_key=True)
+    StoreId = models.CharField(primary_key=True, max_length=500)
     StoreName = models.CharField(max_length=500)
-    StoreAddress = models.CharField(max_length=200)
-    StoreCapacity = models.CharField(max_length=500)
+    StoreAddress = models.CharField(max_length=500)
+    StoreCapacity = models.IntegerField()
     StoreManager = models.CharField(max_length=500)
 
 class Item(models.Model):
-    ItemId = models.IntegerField(primary_key=True)
+    ItemId = models.CharField(primary_key=True, max_length=500)
     ItemName = models.CharField(max_length=500)
     Category = models.CharField(max_length=500)
     Price = models.IntegerField()
-    SupplierId = models.IntegerField()
+    SupplierId = models.CharField(max_length=500)

@@ -4,6 +4,15 @@ import { Home as HomeIcon } from '../icons/home';
 import 'font-awesome/css/font-awesome.min.css';
 import { EOQ as EOQIcon } from '../icons/eoq';
 import { Sales as SalesIcon } from '../icons/sales';
+import { Department as DepartmentIcon } from '../icons/department';
+import { Employee as EmployeeIcon } from '../icons/employee';
+import { Supplier as SupplierIcon } from '../icons/supplier';
+import { Vendor as VendorIcon } from '../icons/vendor';
+import { Store as StoreIcon } from '../icons/store';
+import { Item as ItemIcon } from '../icons/item';
+
+
+
 
 const items = [
   {
@@ -21,6 +30,37 @@ const items = [
     icon: SalesIcon,
     label: 'Sales'
   },
+  {
+    href:'/department',
+    icon: DepartmentIcon,
+    label: 'Department'
+  },
+   {
+    href:'/employee',
+    icon: EmployeeIcon,
+    label: 'Employee'
+  },
+  {
+    href:'/supplier',
+    icon: SupplierIcon,
+    label: 'Supplier'
+  },
+  {
+    href:'/vendor',
+    icon: VendorIcon,
+    label: 'Vendor'
+  },
+  {
+    href:'/store',
+    icon: StoreIcon,
+    label: 'Store'
+  },
+  {
+    href:'/item',
+    icon: ItemIcon,
+    label: 'Item'
+  },
+
 
 
 ];
@@ -42,7 +82,7 @@ export const Sidebar = () => {
           height: 'calc(100% - 64px)',
           p: 1,
           top: 64,
-          width: 73
+          width: 100,
         }
       }}
     >

@@ -18,7 +18,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
 class SalesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sales
-        fields = ('SalesId', 'StoreId', 'Date', 'ItemId', 'Sales')
+        fields = ('SalesId', 'StoreId', 'Date', 'ItemId', 'SalesQty')
 
 
 class SupplierSerializer(serializers.ModelSerializer):
@@ -32,18 +32,18 @@ class VendorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Vendor
         fields = ('VendorId', 'VendorName',
-                  'VendorContact', 'PayementMethod', 'VendorAddress')
+                  'VendorContact', 'PaymentMethod', 'VendorAddress')
 
 
 class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
-        fields = ('StoreId', 'StoreName', 'StoreAddress'
+        fields = ('StoreId', 'StoreName', 'StoreAddress',
                   'StoreCapacity', 'StoreManager')
 
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ('ItemId', 'ItemName', 'Category'
+        fields = ('ItemId', 'ItemName', 'Category',
                   'Price', 'SupplierId')
