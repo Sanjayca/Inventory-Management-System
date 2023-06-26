@@ -21,20 +21,20 @@ export class Sales extends Component {
 
   refreshList() {
     fetch(variables.API_URL + "sales")
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         this.setState({ sales: data });
       });
 
     fetch(variables.API_URL + "store")
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         this.setState({ stores: data });
       });
 
     fetch(variables.API_URL + "item")
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         this.setState({ items: data });
       });
   }
