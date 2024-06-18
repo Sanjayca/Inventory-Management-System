@@ -28,30 +28,30 @@ A Django | React application that forecasts time series data using ARIMA and RNN
 
 ## How To Use
 
-### Back-end
-
-# Navigate to the server directory
+Backend
+Installation
+bash
+Copy code
 cd ./server/
-
-# Install Python dependencies
 pip install -r requirements.txt
-
-# Apply model changes to the database
+Database Setup
+bash
+Copy code
 python manage.py makemigrations
 python manage.py migrate
-
-# Run the Django development server
+Run Server
+bash
+Copy code
 python manage.py runserver
-
-### Frontend Installation and Setup
-
-# Navigate to the client directory
-cd ../client/
-
-# Install Node.js dependencies
+Frontend
+Installation
+bash
+Copy code
+cd ./client/
 npm install
-
-# Run the React development server
+Run Server
+bash
+Copy code
 npm start
 
 
