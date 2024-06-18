@@ -37,10 +37,20 @@ A Django | React application that forecasts time series data using ARIMA and RNN
    ```bash
    cd ./server/
    pip install -r requirements.txt
-
-- Knox
-- Material UI
-- Plotly js
+2.  Set up the database:
+  ```bash
+    python manage.py migrate
+3.  Run the development server:
+   ```bash
+    python manage.py
+### Front-end
+1.Installation:
+    ```bash
+    cd ./client/
+    npm install
+2.  Start the development server:
+     ```bash
+    npm start
 
 
 
