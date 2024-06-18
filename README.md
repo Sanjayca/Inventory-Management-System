@@ -26,30 +26,29 @@ A Django | React application that forecasts time series data using ARIMA and RNN
 - Material UI
 - Plotly js
 
-## How To Use
-
-Backend
-Installation
-bash
-Copy code
+#### Installation
+```bash
 cd ./server/
 pip install -r requirements.txt
-Database Setup
+Package model changes
 bash
 Copy code
 python manage.py makemigrations
+Execute the changes into the database
+bash
+Copy code
 python manage.py migrate
-Run Server
+Run the server
 bash
 Copy code
 python manage.py runserver
-Frontend
+Front-end
 Installation
 bash
 Copy code
-cd ./client/
+cd ./Client/
 npm install
-Run Server
+Run the server
 bash
 Copy code
 npm start
